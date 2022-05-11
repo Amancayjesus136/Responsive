@@ -1,0 +1,96 @@
+.boton {
+	background: red;
+	color: #fff;
+	border-radius: 20px;
+	width: 100px;
+	height: 30px;
+}
+
+.titulo {
+	font-size: 40px;
+	color: blue;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.caja1, .caja2 {
+	width: 45%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+}
+.caja1 {
+	background: blue;
+}
+.caja2 {
+	background: orange;
+}
+.caja3, .caja4, .caja5 {
+	width: 30%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+}
+.caja3 {
+	background: brown;
+}
+.caja4 {
+	background: black;
+}
+.caja5{
+	background: turquoise;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+	.boton {
+		background: orange;
+	}
+	.caja1, .caja2 {
+		width: 100%;
+	}
+}
+
+
+
+@media (max-width:  1000px) {
+	.boton {
+		background: blue;
+	}
+}
+@media (max-width:  600px) {
+	.boton {
+		background: orange;
+	}
+}
+@media (max-width:  700px) and (max-width: 500px){
+	.boton {
+		background: green;
+	}
+}
+@media (max-width: 1000px) {
+	.titulo {
+		color: green;
+	}
+}
+@media (max-width: 800px) and (min-width: 500px){
+	.titulo {
+		color: orange;
+	}
+}
+@media (max-width: 500px) {
+	.titulo {
+		color: red;
+		font-size: 20px;
+	}
+}
+@media print {
+	.titulo {
+		font-size: 140px;
+	}
+	.boton{
+		display: none;
+	}
